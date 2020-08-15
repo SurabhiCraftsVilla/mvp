@@ -1565,7 +1565,6 @@ section {
   overflow: hidden;
   margin: 5px 2.5% !important;
   width: 95%;
-  max-height: 300px;
   text-align: center;
   cursor: pointer;
   padding: 0 !important;
@@ -1580,6 +1579,10 @@ figure {
     width: 23%;
     max-width: 300px;
     margin: 10px 1%;
+    max-height: 300px;
+  }
+  figure.effect-layla img {
+    height: 300px;
   }
 }
 
@@ -1655,9 +1658,7 @@ figure.effect-layla:hover {
 }
 */
 
-figure.effect-layla img {
-  height: 300px;
-}
+
 
 figure.effect-layla figcaption {
   padding: 3em;
