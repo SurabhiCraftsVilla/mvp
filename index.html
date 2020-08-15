@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Surabhi CraftsVilla</title>
+    <title>Surabhi Craftsvilla</title>
     <meta content="Handmade Return gift, Memento & Client gifting. Gifting our exquisite handmade product facilitates the expression of your affection to your loved ones and also honors the Indian artisans by providing recognition and steady income."
           name="descriptison">
     <meta content="Handmade, Return gift, Memento & Client gifting." name="keywords">
     <meta property="og:site_name" content="Surabhi"/>
-    <meta property="og:title" content="Surabhi CraftsVilla"/>
+    <meta property="og:title" content="Surabhi Craftsvilla"/>
     <meta property="og:description" content="Handmade Return gift, Memento & Client gifting."/>
     <meta property="og:image" content="http://www.surabhicraftsvilla.com/assets/img/android-chrome-512x512.png"/>
     <meta property="og:image:type" content="image/png"/>
@@ -32,6 +32,8 @@
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendor/splide/splide-core.min.css" rel="stylesheet">
+    <link href="assets/vendor/splide/splide.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
@@ -52,7 +54,7 @@
     <div class="container d-flex align-items-center">
 
         <div class="logo mr-auto">
-            <h1 class="text-light"><a href="index.html"><span>Surabhi CraftsVilla</span></a></h1>
+            <h1 class="text-light"><a href="index.html"><span>Surabhi Craftsvilla</span></a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -78,15 +80,26 @@
     <div class="hero-container">
         <div id="heroCarousel" class="carousel slide carousel-fade" data-ride="carousel">
 
-            <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+            <ol style="display: none;" class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-            <div class="carousel-inner" role="listbox">
+            <div>
+                <video id="video" class="heroVideo" muted autoplay loop>
+                    <source src="./assets/home_video.mp4" type="video/mp4">
+                  </video>
+                  <div>
+                      <img src="./assets/img/sample/vision1.jpg">
+                      <img src="./assets/img/sample/vision1.jpg">
+                      <img src="./assets/img/sample/vision1.jpg">
+                      <img src="./assets/img/sample/vision1.jpg">
+                  </div>
+            </div>
+            <div class="carousel-inner" role="listbox" style="display: none;">
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active" style="background: url(assets/img/slide/slide-1.jpg);">
                     <div class="carousel-container">
                         <div class="carousel-content">
-                            <h2 class="animated fadeInDown"><span>Surabhi</span> CraftsVilla</h2>
+                            <h2 class="animated fadeInDown"><span>Surabhi</span> Craftsvilla</h2>
                             <p class="animated fadeInUp">Art is not a handicraft, it is the transmission of feeling the
                                 artist has experienced.'</p>
                             <div>
@@ -257,24 +270,26 @@
 
             <div class="row">
 
-                <div class="col-lg-5 align-items-stretch video-box"
-                     style='background-image: url("assets/img/about-us.jpeg");'>
+                <div class="col-lg-4 align-items-stretch video-box">
+                     <img src="./assets/img/aboutus.jpg" width="100%" height="100%"/>
                     <!--            <a href="https://www.youtube.com/watch?v=-yywA3JJ1ic" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>-->
                 </div>
 
-                <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch">
+                <div class="col-lg-8 d-flex flex-column justify-content-center align-items-stretch">
 
                     <div class="content">
-                        <h3>About <strong>Surabhi Crafts Villa</strong></h3>
-                        <p>
+                        <h3>About <strong>Surabhi Craftsvilla</strong></h3>
+                        <!-- <p>
                             Our handmade Items are Crafted in an environment of Joy, Honor, and Respect. Our intent is
                             for you to realize the desirability of the handmade art work over usual machine made goods.
+                        </p> -->
+                        <p class="style-description">
+                            Our handmade Items are Crafted in an Environment of Joy, Honor, and Respect. <br/>
+                            Our intent is for you to realize the desirability of the handmade art work over usual machine made goods. <br/>
+                            By choosing our products, you not only make your loved ones more special but also help in revitalizing the prestige of indian culture and elevate the life of indian handicraftsmen. <br/>
+                            We also help in creating a platform for new enthusiasts by supporting them in marketing their creation and celebrate collective creativity.
                         </p>
-                        <p class="font-italic">
-                            By choosing our products, you not only make your loved
-                            ones more special but also helping in such a way
-                        </p>
-                        <ul>
+                        <!-- <ul>
                             <li><i class="bx bx-check-double"></i>We help in revitalizing the prestige of indian culture
                                 and
                                 elevate the life of indian handcraftsman.
@@ -286,7 +301,7 @@
                                 also help in creating a platform for new enthusiasts by supporting them in
                                 marketing their creation and celebrate collective creativity.
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
 
                 </div>
@@ -302,35 +317,33 @@
 
             <div class="section-title">
                 <h2>Why choose <span>our handicrafts</span></h2>
-                <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque
-                    vitae autem.</p>
             </div>
             <div class="row">
                 <div class="grid">
-                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-0 box">
+                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-3 box">
                         <img src="assets/img/four-pillars/authenticity.jpg" alt="authenticity">
                         <figcaption>
                             <h2>AUTHENTICITY</h2>
                             <p>By assuring original, cost effective handcrafted products</p>
                         </figcaption>
                     </figure>
-                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-0 box">
-                        <img src="assets/img/four-pillars/social.jpg" alt="img03">
+                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-3 box">
+                        <img src="assets/img/four-pillars/socialimpact.jpg" alt="impact">
                         <figcaption>
                             <h2>SOCIAL IMPACT</h2>
                             <p>By ensuring dignified income to artisans of rural community</p>
                         </figcaption>
                     </figure>
-                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-0 box">
-                        <img src="assets/img/four-pillars/promote.jpg" alt="img03">
+                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-3 box">
+                        <img src="assets/img/four-pillars/promoteculture.jpg" alt="culture">
                         <figcaption>
                             <h2>PROMOTE CULTURE</h2>
                             <p>by sourcing handpicked traditional products across Indian
                                 states</p>
                         </figcaption>
                     </figure>
-                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-0 box">
-                        <img src="assets/img/four-pillars/sustainability.jpg" alt="img03">
+                    <figure class="effect-layla col-lg-3 mt-4 mt-lg-3 box">
+                        <img src="assets/img/four-pillars/sustainability.jpg" alt="sustainability">
                         <figcaption>
                             <h2>SUSTAINABILITY</h2>
                             <p>by supporting long term ecological balance</p>
@@ -390,9 +403,9 @@
             </div>
 
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-3" style="display:none;">
                     <ul class="nav nav-tabs flex-column">
-                        <li class="nav-item">
+                       <!-- <li class="nav-item">
                             <a class="nav-link active show" data-toggle="tab" href="#tab-1">Return Gift</a>
                         </li>
                         <li class="nav-item">
@@ -400,21 +413,21 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="tab" href="#tab-3">Market You Talent</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
-                <div class="col-lg-9 mt-4 mt-lg-0">
+                <div class="col-lg-12 mt-4 mt-lg-0">
                     <div class="tab-content">
                         <div class="tab-pane active show" id="tab-1">
                             <div class="row">
-                                <div class="col-lg-8 details order-2 order-lg-1">
+                                <div class="col-lg-6 details order-2 order-lg-1">
                                     <h3>Return Gift</h3>
                                     <p class="font-italic">Want return gifts to stand out for your guests?</p>
                                     <p>Choosing a combination of Unique, Useful and Budget-friendly return gift is no
                                         more an hectic process. We offer a wide variety of handmade and eco-friendly
                                         return gifts for any occasion for you to select.</p>
                                 </div>
-                                <div class="col-lg-4 text-center order-1 order-lg-2">
+                                <div class="col-lg-6 text-center order-1 order-lg-2">
                                     <img src="assets/img/slide-1.jpg" alt="" class="img-fluid">
                                 </div>
                             </div>
@@ -866,7 +879,7 @@
 <!-- ======= Footer ======= -->
 <footer id="footer">
     <div class="container">
-        <h3>Surabhi CraftsVilla</h3>
+        <h3>Surabhi Craftsvilla</h3>
         <p>Handmade Return gift, Memento & Client gifting.</p>
         <div class="social-links">
             <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -896,6 +909,7 @@
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/vendor/venobox/venobox.min.js"></script>
 <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+<script src="assets/vendor/splide/splide.min.js"></script>
 
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
