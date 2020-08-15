@@ -1563,14 +1563,26 @@ section {
   position: relative;
   float: left;
   overflow: hidden;
-  margin: 10px 1%;
-  width: 23%;
-  max-width: 300px;
+  margin: 5px 2.5% !important;
+  width: 95%;
   max-height: 300px;
   text-align: center;
   cursor: pointer;
   padding: 0 !important;
 }
+
+figure {
+  margin: 0px !important;
+}
+
+@media screen and (min-width: 600px) {
+  .grid figure {
+    width: 23%;
+    max-width: 300px;
+    margin: 10px 1%;
+  }
+}
+
 
 .grid figure img {
   position: relative;
