@@ -17,7 +17,8 @@
 	-ms-backface-visibility: hidden;
 	backface-visibility: hidden;
 	width: 300px;
-	height: 300px;
+	height: 350px;
+    margin-top: 50px
 }
 
 .no-js .tp-grid li {
@@ -32,12 +33,13 @@
 
 .tp-grid li img {
 	display: block;
-	border: none;
-	width: 300px;
-	height: 300px;
+    border: none;
+    width: 300px;
+    object-fit: contain;
+    height: 300px;
 }
 
-.tp-info,
+/* .tp-info, */
 .tp-title {
 	position: absolute;
 	background: #fff;
@@ -60,11 +62,11 @@
 }
 
 .no-touch .tp-info {
-	-webkit-transition: all 0.3s ease-in-out;
+	/* -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out; */
 }
 
 .no-touch .tp-grid li:hover .tp-info {
@@ -82,6 +84,8 @@
 .tp-title {
 	padding: 10px 35px 10px 10px;
 	left: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;	
 }
 
 .tp-title span:nth-child(2){

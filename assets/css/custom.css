@@ -6,26 +6,33 @@
 
 .topbar {
 	position: relative;
-	padding: 20px 0;
-	margin: 0 0 40px;
-	box-shadow: 0 1px 0 #aaa, 0 -1px 0 #aaa;
+	padding: 10px 0;
+	margin: 0 0 30px;
+	font-size: 20px;
+    border-bottom: 1px solid #9a9a9a;
+    background: transparent;
+    color: white;
+    position: fixed;
+    width: 100%;
+	z-index: 100000;	
+    background: #3c3a391f;
+    box-shadow: 0px 0px 1px #9a9a9a;
+}
+
+#close {
+	position: absolute;
 }
 
 .back {
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	margin: -20px 0 0 -20px;
+	width: 50px;
 	border-radius: 50%;
 	text-align: center;
-	line-height: 38px;
-	color: #999;
-	background: #ddd;
-	background: rgba(255,255,255,0.5);
+	top: 3px;
+	line-height: 40px;
+	color: #111;
 	cursor: pointer;
 	display: none;
+	font-size:22.5px;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -35,29 +42,39 @@
 }
 
 .no-touch .back:hover {
-	background: #fff;
-	background: rgba(255,255,255,0.9);
+	color: #ffb03b;
+}
+
+.topbar .nav {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
 }
 
 .topbar h2,
 .topbar h3 {
 	display: inline-block;
-	font-weight: 300;
-	font-size: 40px;
+	font-weight: 600;
+	font-size: 16px;
 	width: 49%;
 	min-width: 320px;
 }
 
-.topbar h2 {
-	padding-left: 30px;
-	padding-right: 20px;
-	color: #666;
+.topbar h2,h3 {
+    padding-left: 30px;
+    padding-right: 20px;
+    color: #010101;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
 }
 
 .topbar h3 {
 	text-align: right;
 	padding-left: 20px;
-	color: #aaa;
+	color: #010101;
 }
 
 /* Loader */
