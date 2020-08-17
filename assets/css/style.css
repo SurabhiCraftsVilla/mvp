@@ -1777,7 +1777,7 @@ figure.effect-layla:hover img {
 }
 
 #featured .member img {
-  height: 400px;
+  min-height: 340px;
   margin-bottom: 8px;
   object-fit: scale-down;
 }

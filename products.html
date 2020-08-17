@@ -155,7 +155,7 @@
             </li>
 
             <!-- Coasters -->
-            <li data-pile="Coasters">
+            <!-- <li data-pile="Coasters">
                 <a href="#">
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Coasters/YCCT01.jpg"/>
@@ -166,10 +166,10 @@
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Coasters/YCCT02.jpg"/>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Cookwares -->
-            <li data-pile="Cookwares">
+            <!-- <li data-pile="Cookwares">
                 <a href="#">
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Cookwares/YCCW01.jpg"/>
@@ -186,7 +186,7 @@
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Cookwares/YCCW03.jpg"/>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Hand purse -->
             <li data-pile="Hand purse">
@@ -239,7 +239,7 @@
             </li>
 
             <!-- Home decor -->
-            <li data-pile="Home decor">
+            <!-- <li data-pile="Home decor">
                 <a href="#">
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Home%20decor/YCHD01.jpg"/>
@@ -262,7 +262,7 @@
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Home%20decor/YCHD04.jpg"/>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Jewellery box-->
             <li data-pile="Jewellery box">
@@ -563,7 +563,7 @@
             </li>
 
             <!-- Oil lamp-->
-            <li data-pile="Oil lamp">
+            <!-- <li data-pile="Oil lamp">
                 <a href="#">
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Oil%20lamp/YCOL01.jpg"/>
@@ -580,7 +580,7 @@
                     <span class="tp-info"><span></span></span>
                     <img src="assets/img/products/Oil%20lamp/YCOL03.jpg"/>
                 </a>
-            </li>
+            </li> -->
 
             <!-- Photo frame-->
             <li data-pile="Oil lamp">
@@ -746,6 +746,10 @@
         },
         onBeforeOpen: function (pileName) {
           $name.html(pileName)
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })          
         },
         onAfterOpen: function (pileName) {
           $close.show()
@@ -756,6 +760,7 @@
       $close.hide()
       $name.empty()
       stapel.closePile()
+        
     })
 
   })
