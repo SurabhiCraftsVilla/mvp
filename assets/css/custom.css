@@ -213,3 +213,33 @@
 	.topbar h2, .topbar h3 { text-align: left; padding: 0; display: block;}
 	.back { left: auto; right: 0px; margin-left: 0px;}
 }
+
+@media screen and (min-width: 400px){
+	.topbar .leftSection h2 {
+		padding-left: 60px;
+	}
+	.topbar .leftSection #close {
+		left: 2.5px;
+		top: 0px;
+	}	
+	.topbar .rightSection #name { 	
+
+	}
+}
+
+.topbar .leftSection h2 {
+	padding-left: 50px;
+}
+
+
+.topbar .leftSection #close {
+    left: 2.5px;
+    top: -2.5px;
+}
+
+.topbar .rightSection #name {
+	position: absolute;
+    right: 10px;
+    text-align: right;
+    top: 17.5px;
+}
