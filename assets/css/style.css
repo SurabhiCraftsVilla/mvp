@@ -622,6 +622,12 @@ section {
   top: 2px;
 }
 
+.style_pts li {
+  padding-left: 2.5px !important;
+  list-style: disc; 
+  margin-left: 30px;
+}
+
 .about .content p:last-child {
   margin-bottom: 0;
 }
